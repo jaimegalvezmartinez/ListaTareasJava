@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <!-- Desarrollador: Jaime Galvez Martinez -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lista de tareas</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/lista.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1><strong>Mis Tareas</strong></h1>
+
+        <img src="assets/lista.png" alt="Lista de tareas" class="imagen-lista">
+
+        <!-- Formulario para añadir tareas -->
+
+        <form id="formularioTarea">
+
+            <input
+                type="text"
+                id="textoTarea"
+                placeholder="Introduzca el nombre de la tarea..."
+                required>
+
+            <button type="submit">
+                <h2>Introduzca el Nombre de la Tarea</h2>
+            </button>
+
+        </form>
+
+        <!-- JavaScript carga las tareas -->
+
+        <ul id="listaTareas"></ul>
+
+    </main>
+
+</body>
+
+</html>
