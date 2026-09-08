@@ -125,12 +125,12 @@ Ejemplo:
 [
     {
         "id": 0,
-        "texto": "Limpiar Arena de Romeo",
+        "texto": "Limpiar Arena del Gato",
         "completada": false
     },
     {
         "id": 1,
-        "texto": "Dar lata a Romeo",
+        "texto": "Dar Comida al Gato",
         "completada": false
     }
 ]
