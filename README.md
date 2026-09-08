@@ -155,7 +155,7 @@ Respuesta:
 ```json
 {
     "id": 1,
-    "texto": "Dar lata a Romeo",
+    "texto": "Dar Comida al Gato",
     "completada": false
 }
 ```
