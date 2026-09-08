@@ -160,7 +160,7 @@ Respuesta:
 }
 ```
 
----
+---Aplicación web para gestionar una lista de tareas mediante una API REST desarrollada con Spring Boot y un frontend basado en HTML, CSS y JavaScript.
 
 ### Crear una tarea
 
@@ -208,7 +208,7 @@ Body:
 
 ```http
 DELETE /tarea/{id}
-```
+```Aplicación web para gestionar una lista de tareas mediante una API REST desarrollada con Spring Boot y un frontend basado en HTML, CSS y JavaScript.
 
 Ejemplo:
 
@@ -261,7 +261,7 @@ Contiene la estructura de la página:
 * Formulario para crear tareas.
 * Lista donde se muestran las tareas.
 
-El JavaScript se carga utilizando `defer`:
+El JavaScript se carga utilizando `defer`:Aplicación web para gestionar una lista de tareas mediante una API REST desarrollada con Spring Boot y un frontend basado en HTML, CSS y JavaScript.
 
 ```html
 <script src="script.js" defer></script>
@@ -413,6 +413,94 @@ No se utiliza todavía una base de datos.
 * [ ] Base de datos
 
 ---
+
+## ▶️ Ejecutar el proyecto mediante Maven
+
+También podemos ejecutar la aplicación desde la terminal utilizando **Maven**, sin necesidad de iniciar Spring Boot manualmente desde el IDE.
+
+Desde la carpeta raíz del proyecto ejecutamos:
+
+```bash
+mvn spring-boot:run
+```
+
+Maven se encargará de iniciar la aplicación Spring Boot.
+
+Una vez iniciada, podremos acceder a la aplicación desde:
+
+```text
+http://localhost:8080/
+```
+
+Y a la API REST desde:
+
+```text
+http://localhost:8080/tarea
+```
+
+### 🪟 En Windows
+
+Si el proyecto incluye el Maven Wrapper (`mvnw`), también podemos utilizar:
+
+```bash
+mvnw spring-boot:run
+```
+
+O, en PowerShell:
+
+```powershell
+.\mvnw spring-boot:run
+```
+
+### 🐧 Linux / macOS
+
+Si utilizamos el Maven Wrapper:
+
+```bash
+./mvnw spring-boot:run
+```
+
+### 📦 Generar y ejecutar el `.jar`
+
+Otra opción es generar primero el archivo ejecutable:
+
+```bash
+mvn clean package
+```
+
+Esto generará un archivo `.jar` dentro de:
+
+```text
+target/
+```
+
+Por ejemplo:
+
+```text
+target/tareas-0.0.1-SNAPSHOT.jar
+```
+
+Después podemos ejecutarlo con:
+
+```bash
+java -jar target/tareas-0.0.1-SNAPSHOT.jar
+```
+
+De esta forma podemos ejecutar la aplicación sin abrir el proyecto desde un IDE.
+
+### 📌 Resumen
+
+```text
+Desarrollo:
+mvn spring-boot:run
+
+Generar aplicación:
+mvn clean package
+
+Ejecutar aplicación empaquetada:
+java -jar target/tareas-0.0.1-SNAPSHOT.jar
+```
+
 
 ## 👨‍💻 Autor
 
